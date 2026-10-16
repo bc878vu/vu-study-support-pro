@@ -107,7 +107,7 @@ class Handler(BaseHTTPRequestHandler):
  def static(self,path):
   files={'/':'index.html','/admin':'admin.html','/static/site.css':'site.css','/static/site.js':'site.js','/static/admin.js':'admin.js'}
   if path not in files: return self.error(404,'Not found')
-  file=ROOT/('static/'+files[path] if path.startswith('/static/') else files[path]);mime='text/css' if file.suffix=='.css' else 'text/javascript' if file.suffix=='.js' else 'text/html'
+  file=ROOT/files[path];mime='text/css' if file.suffix=='.css' else 'text/javascript' if file.suffix=='.js' else 'text/html'
   self.send(200,file.read_bytes(),mime)
  def do_GET(self):
   p=urlparse(self.path).path
