@@ -5,9 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light dark" />
   <meta name="theme-color" content="#0d5a43" />
-  <link rel="icon" href="data:," />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%23084734'/%3E%3Cg transform='translate(2.4 3.2) scale(0.78)' fill='%23ffffff'%3E%3Cpath d='M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z'/%3E%3C/g%3E%3C/svg%3E" />
   <title>VU Study Support — 1:1 Tutoring &amp; Exam Guidance for Virtual University Students</title>
   <meta name="description" content="1:1 tutoring, exam preparation, assignment guidance and CS619 mentoring for Virtual University students. Honest support by EduNexus — guidance, not shortcuts." />
+  <meta name="keywords" content="VU tutoring, Virtual University tutor, VU exam preparation, VU 1:1 tutoring, CS619 project mentoring, VU assignment guidance, Virtual University study help, EduNexus" />
+  <meta name="author" content="EduNexus" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://vu-study-support-pro.vercel.app/" />
+  <meta property="og:url" content="https://vu-study-support-pro.vercel.app/" />
   <meta property="og:title" content="VU Study Support — 1:1 Tutoring &amp; Exam Guidance for Virtual University Students" />
   <meta property="og:description" content="Clear concepts, practical exam preparation and responsible academic guidance for VU students — by EduNexus." />
   <meta property="og:type" content="website" />
@@ -103,7 +108,12 @@
     }
     .nav-inner { height: 100%; display: flex; align-items: center; gap: 24px; }
     .brand-link { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; letter-spacing: -.02em; white-space: nowrap; }
-    .brand-mark { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 10px 3px 10px 10px; background: var(--brand-deep); color: #fff; font-family: "Source Serif 4", serif; font-size: 1.1rem; box-shadow: 0 8px 18px rgba(8, 71, 52, .2); }
+    .brand-mark { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 10px 3px 10px 10px; background: var(--brand-deep); color: #fff; box-shadow: 0 8px 18px rgba(8, 71, 52, .2); }
+    .brand-mark svg { width: 21px; height: 21px; fill: #fff; }
+    .footer-brand { display: inline-flex; align-items: center; gap: 9px; text-decoration: none; color: var(--ink); font-weight: 800; font-size: .86rem; letter-spacing: -.02em; }
+    .footer-brand .brand-mark { width: 27px; height: 27px; border-radius: 8px 3px 8px 8px; box-shadow: none; }
+    .footer-brand .brand-mark svg { width: 16px; height: 16px; }
+    .footer-disclaimer { margin: 16px 0 0; text-align: center; font-size: .76rem; }
     .nav-links { margin-left: auto; display: flex; align-items: center; gap: 5px; }
     .nav-links > a:not(.nav-cta) { min-height: 44px; display: inline-flex; align-items: center; padding: 8px 12px; border-radius: 10px; color: var(--muted); text-decoration: none; font-size: .86rem; font-weight: 750; transition: color .2s ease, background .2s ease; }
     .nav-links > a:not(.nav-cta):hover { color: var(--brand); background: color-mix(in srgb, var(--surface) 72%, transparent); }
@@ -272,7 +282,6 @@
     .contact-meta a { color: var(--gold); text-underline-offset: 3px; }
     .contact-card .btn { background: var(--gold); color: #2f250e; box-shadow: 0 14px 32px rgba(0,0,0,.18); }
     .contact-card .btn:hover { transform: translateY(-2px); background: #f7c464; }
-    .disclaimer { margin: 22px auto 0; max-width: 920px; text-align: center; color: var(--muted); font-size: .8rem; }
     .footer { border-top: 1px solid var(--line); padding: 27px 0 38px; color: var(--muted); font-size: .81rem; }
     .footer-inner { display: flex; justify-content: space-between; gap: 18px; align-items: center; }
     .footer a { color: var(--brand); font-weight: 750; }
@@ -355,13 +364,84 @@
     }
   </style>
   <script>document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://vu-study-support-pro.vercel.app/#organization",
+        "name": "VU Study Support",
+        "url": "https://vu-study-support-pro.vercel.app/",
+        "description": "1:1 tutoring, exam preparation, assignment guidance and CS619 mentoring for Virtual University students.",
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "EduNexus",
+          "url": "https://edunexus.dpdns.org"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+92-309-8851445",
+          "contactType": "customer support",
+          "areaServed": "PK",
+          "availableLanguage": ["English", "Urdu"]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://vu-study-support-pro.vercel.app/#website",
+        "url": "https://vu-study-support-pro.vercel.app/",
+        "name": "VU Study Support",
+        "publisher": { "@id": "https://vu-study-support-pro.vercel.app/#organization" },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://vu-study-support-pro.vercel.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Will you complete my quizzes, assignments, or GDB for me?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. We do not complete or submit assessed work on your behalf. We explain the question, rubric, concepts, approach, and structure so you can prepare your own response." }
+          },
+          {
+            "@type": "Question",
+            "name": "How will I know the fees?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Fees depend on the course, the type of support, and the duration you need. Share your course code and requirements on WhatsApp; once we understand them, we will share the price." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the timing flexible, especially for working students?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Available timings are coordinated around the schedules of working students and busy learners. Send your preferred days and times on WhatsApp." }
+          },
+          {
+            "@type": "Question",
+            "name": "Which subjects are covered?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Computer Science, Software Engineering, IT, Management, Mathematics, English, and many general VU subjects are covered. Share your course code to confirm exact availability." }
+          },
+          {
+            "@type": "Question",
+            "name": "How is this service related to EduNexus?",
+            "acceptedAnswer": { "@type": "Answer", "text": "VU Study Support is a learning-focused initiative by EduNexus, the team behind the free study library of notes, handouts, past papers, and MCQs for VU students." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I get started?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Send your course code, topic, current difficulty, and preferred timing on WhatsApp. We will review your requirements and suggest the next suitable step." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <header>
   <nav class="site-nav" aria-label="Primary navigation">
     <div class="wrap nav-inner">
-      <a class="brand-link" href="#top" aria-label="Go to top">
-        <span class="brand-mark" aria-hidden="true">E</span>
-        <span class="brand-text">EduNexus Support</span>
+      <a class="brand-link" href="#top" aria-label="VU Study Support — go to top">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg></span>
+        <span class="brand-text">VU Study Support</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span class="sr-only">Toggle navigation</span></button>
       <div class="nav-links" id="nav-links">
@@ -376,12 +456,13 @@
       </div>
     </div>
   </nav>
+  </header>
 
   <main id="top">
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <div class="byline">VU Study Support · By EduNexus</div>
+          <div class="byline">By EduNexus</div>
           <h1 aria-label="Clear concepts for VU studies. Guidance at every step.">
             <span class="word" style="--i:0">Clear</span> <span class="word" style="--i:1">concepts</span> <span class="word" style="--i:2">for</span> <span class="word" style="--i:3">VU</span> <span class="word" style="--i:4">studies.</span><br>
             <span class="accent"><span class="word" style="--i:5">Guidance</span> <span class="word" style="--i:6">at</span> <span class="word" style="--i:7">every</span> <span class="word" style="--i:8">step.</span></span>
@@ -397,7 +478,6 @@
           <div class="trust-row" aria-label="Trust points">
             <span class="trust-chip">VU-focused</span>
             <span class="trust-chip">Guidance, not shortcuts</span>
-            <span class="trust-chip">By EduNexus</span>
           </div>
         </div>
         <div class="hero-visual">
@@ -483,7 +563,7 @@
 
     <section class="ethics">
       <div class="wrap ethics-card reveal">
-        <div><p class="kicker">Responsible support</p><h2>Guidance that strengthens your learning.</h2><p>We do not complete or submit assessed work on your behalf. Every session is meant to help you understand, so you can do your own work with confidence.</p></div>
+        <div><p class="kicker">Responsible support</p><h2>Guidance that strengthens your learning.</h2><p>Every session is built around understanding — clear explanations, honest feedback, and room to ask questions — so the work you submit is genuinely your own.</p></div>
         <ul class="principles"><li>Clear explanations of concepts and instructions</li><li>Help with planning, structure, and feedback</li><li>Practical direction for exam and project preparation</li><li>No grade guarantees, no academic shortcuts</li></ul>
       </div>
     </section>
@@ -496,7 +576,7 @@
           <details><summary>How will I know the fees?</summary><div class="faq-answer"><div><p>Fees depend on the course, the type of support, and the duration you need. Share your course code and requirements on WhatsApp; once we understand them, we will share the price.</p></div></div></details>
           <details><summary>Is the timing flexible, especially for working students?</summary><div class="faq-answer"><div><p>Yes. Available timings are coordinated around the schedules of working students and busy learners. Send your preferred days and times on WhatsApp.</p></div></div></details>
           <details><summary>Which subjects are covered?</summary><div class="faq-answer"><div><p>Computer Science, Software Engineering, IT, Management, Mathematics, English, and many general VU subjects are covered. Share your course code to confirm exact availability.</p></div></div></details>
-          <details><summary>How is this service related to EduNexus?</summary><div class="faq-answer"><div><p>VU Study Support is a learning-focused initiative by EduNexus. For free study files, notes, and VU resources, visit the <a href="https://edunexus.dpdns.org" target="_blank" rel="noopener noreferrer">EduNexus study library</a>.</p></div></div></details>
+          <details><summary>How is this service related to EduNexus?</summary><div class="faq-answer"><div><p>VU Study Support is a learning-focused initiative by EduNexus, the team behind the free study library of notes, handouts, past papers, and MCQs for VU students.</p></div></div></details>
           <details><summary>How do I get started?</summary><div class="faq-answer"><div><p>Send your course code, topic, current difficulty, and preferred timing on WhatsApp. We will review your requirements and suggest the next suitable step.</p></div></div></details>
         </div>
       </div>
@@ -505,15 +585,14 @@
     <section id="contact" class="contact">
       <div class="wrap">
         <div class="contact-card reveal">
-          <div><p class="kicker" style="color: var(--gold)">Talk to us</p><h2>Ready to start?</h2><p>Share your course code, topic, and the support you need. We start with a straightforward, honest conversation.</p><div class="contact-meta"><span>WhatsApp: +92 309 8851445</span><a href="https://edunexus.dpdns.org" target="_blank" rel="noopener noreferrer">Explore free EduNexus library ↗</a></div></div>
+          <div><p class="kicker" style="color: var(--gold)">Talk to us</p><h2>Ready to start?</h2><p>Share your course code, topic, and the support you need. We start with a straightforward, honest conversation.</p><div class="contact-meta"><span>WhatsApp: +92 309 8851445</span></div></div>
           <a class="btn" href="https://wa.me/923098851445" target="_blank" rel="noopener noreferrer"><svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 3a12.8 12.8 0 0 0-11 19.35L3.2 29l6.8-1.78A12.8 12.8 0 1 0 16.04 3Zm0 23.43a10.6 10.6 0 0 1-5.4-1.48l-.38-.22-4.03 1.06 1.08-3.93-.25-.4a10.65 10.65 0 1 1 8.98 4.97Zm5.84-7.96c-.32-.16-1.9-.94-2.2-1.05-.29-.11-.5-.16-.71.16-.21.32-.82 1.05-1 1.26-.19.21-.37.24-.69.08-1.88-.94-3.12-1.68-4.37-3.81-.33-.57.33-.53.94-1.76.1-.21.05-.4-.03-.56-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.54-.71-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.08-1.11 2.64 0 1.56 1.13 3.06 1.29 3.27.16.21 2.23 3.4 5.4 4.77.75.33 1.34.52 1.8.66.76.24 1.45.21 1.99.13.61-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.13-.29-.21-.61-.37Z"/></svg>Chat on WhatsApp</a>
         </div>
-        <p class="disclaimer">Academic guidance only. We do not guarantee grades or complete assessed work on behalf of students.</p>
       </div>
     </section>
   </main>
 
-  <footer class="footer"><div class="wrap footer-inner"><span>VU Study Support · By EduNexus</span><a href="https://edunexus.dpdns.org" target="_blank" rel="noopener noreferrer">Free study library</a></div></footer>
+  <footer class="footer"><div class="wrap"><div class="footer-inner"><a class="footer-brand" href="#top" aria-label="VU Study Support — go to top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg></span><span>VU Study Support</span></a><a href="https://edunexus.dpdns.org" target="_blank" rel="noopener noreferrer">Free study library</a></div><p class="footer-disclaimer">Academic guidance only — we do not guarantee grades or complete assessed work on behalf of students.</p></div></footer>
 
   <a class="float-whatsapp" href="https://wa.me/923098851445" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp at +92 309 8851445"><svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 3a12.8 12.8 0 0 0-11 19.35L3.2 29l6.8-1.78A12.8 12.8 0 1 0 16.04 3Zm0 23.43a10.6 10.6 0 0 1-5.4-1.48l-.38-.22-4.03 1.06 1.08-3.93-.25-.4a10.65 10.65 0 1 1 8.98 4.97Zm5.84-7.96c-.32-.16-1.9-.94-2.2-1.05-.29-.11-.5-.16-.71.16-.21.32-.82 1.05-1 1.26-.19.21-.37.24-.69.08-1.88-.94-3.12-1.68-4.37-3.81-.33-.57.33-.53.94-1.76.1-.21.05-.4-.03-.56-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.54-.71-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.08-1.11 2.64 0 1.56 1.13 3.06 1.29 3.27.16.21 2.23 3.4 5.4 4.77.75.33 1.34.52 1.8.66.76.24 1.45.21 1.99.13.61-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.13-.29-.21-.61-.37Z"/></svg><span class="float-label">WhatsApp</span></a>
   <button class="back-to-top" type="button" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 14 6-6 6 6"/></svg></button>
